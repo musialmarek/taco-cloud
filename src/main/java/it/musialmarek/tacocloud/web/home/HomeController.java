@@ -1,4 +1,4 @@
-package it.musialmarek.tacocloud.home;
+package it.musialmarek.tacocloud.web.home;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
