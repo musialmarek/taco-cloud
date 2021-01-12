@@ -14,7 +14,7 @@
             <h3>Choose type of wrap:</h3>
             <div th:each="ingredient : ${wrap}">
                 <input name="ingredients" type="checkbox" th:value="${ingredient.id}"/>
-                <span th:text="${ingedient.name}">SKŁADNIK</span>
+                <span th:text="${ingredient.name}">SKŁADNIK</span>
                 <br>
             </div>
         </div>
@@ -22,7 +22,7 @@
             <h3>Choose vegetables: </h3>
             <div th:each="ingredient: ${veggies}">
                 <input name="ingredients" type="checkbox" th:value="${ingredient.id}"/>
-                <span th:text="${ingedient.name}">SKŁADNIK</span>
+                <span th:text="${ingredient.name}">SKŁADNIK</span>
                 <br>
             </div>
         </div>
@@ -30,7 +30,7 @@
             <h3>Choose sauce: </h3>
             <div th:each="ingredient: ${sauce}">
                 <input name="ingredients" type="checkbox" th:value="${ingredient.id}"/>
-                <span th:text="${ingedient.name}">SKŁADNIK</span>
+                <span th:text="${ingredient.name}">SKŁADNIK</span>
                 <br>
             </div>
         </div>
