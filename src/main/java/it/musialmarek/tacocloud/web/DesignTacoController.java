@@ -46,16 +46,16 @@ public class DesignTacoController {
 
     @GetMapping
     public String showDesignForm(Model model) {
-        model.addAttribute("design", new Taco());
+        model.addAttribute("taco", new Taco());
         return "design";
     }
 
     @PostMapping
-    public String processDesign(@Valid Taco design, Errors errors) {
+    public String processDesign(@Valid Taco taco, Errors errors) {
         if(errors.hasErrors()){
             return "design";
         }
-        log.info("Processing design {}", design);
+        log.info("Processing design {}", taco);
         return "redirect:/orders/current";
 
     }
