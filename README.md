@@ -9,7 +9,7 @@
 
 
 ## Status
-Project is: __in progress__ - chapter 1
+Project is: __in progress__ - chapter 2
 
 ## Source
 Spring In Action by Craig Walls
